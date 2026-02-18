@@ -3,10 +3,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin-left: 2.5rem;
-}
-
 header {
     display: flex;
     flex-wrap: wrap;
