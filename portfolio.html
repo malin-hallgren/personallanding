@@ -11,46 +11,129 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
    <header>
        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
        </nav>
+       <figure>
+            <img class = "logo" src="favicon.png"
+            alt="logo">
+        </figure>
     </header>
     <figure>
         <img class = "hero-img" src="hero.jpg"
             alt="Hero Image">
     </figure>
+    <h1>Malin Hallgren</h1>
+    <h2>Fullstack Developer</h2>
     <main><!-- main content goes here -->
         <section>
-            <article >
+            <article class="portfolio-article">
                 <h2 class = "section-heading">Portfolio</br></h2>
-                <section class = "portfolio-card">
-                    <p>This part is still under construction! For now, here's a few links:</br></p>
-                    <ul>
-                        <li><a href = "https://github.com/malin-hallgren">GitHub Profile</a></li>
-                        <li><a href = "https://store.steampowered.com/app/3152780/Expansion__Hearts_of_Iron_IV_Gtterdmmerung">Steam Page: Hearts of Iron - Götterdämmerung</a></li>
-                        <li><a href = "https://forum.paradoxplaza.com/forum/developer-diary/developer-diary-austria.1706600/">Developer Blog: Hearts of Iron IV - Austria</a></li>
-                    </ul>
+                
+                <section class = "portfolio-deck">
+                    <a href="#gtd" class = "portfolio-card">
+                        <h3 class="portfolio-entry-title">Hearts of Iron IV: Götterdämmerung</h3>
+                        <ul>
+                            <li>Published by Paradox Interactive (&copy;All rights reserved) in 2024</li>
+                            <li>Lead designer and scripter on Austria</li>
+                            <li>Implementation support on Germany and Belgium</li>
+                            <li>Customer facing communication/marketing for Austria</li>
+                        </ul>
+                    </a>
+                    
+                    <a href="#toa" class = "portfolio-card">
+                        <h3 class="portfolio-entry-title">Hearts of Iron IV: Trial of Allegiance</h3>
+                        <ul>
+                            <li>Published by Paradox Interactive (&copy;All rights reserved) in 2024</li>
+                            <li>Implementation support on Brazil, Argentina and Chile</li>
+                            <li>Bug fixes and improvements across all country content</li>
+                        </ul>
+                    </a>
+                    <a href="#ncns" class = "portfolio-card">
+                        <h3 class="portfolio-entry-title">Hearts of Iron IV: No Compromise, No Surrender</h3>
+                        <ul>
+                            <li>Published by Paradox Interactive (&copy;All rights reserved) in 2025</li>
+                            <li>Design of country content for China (PRC)</li>
+                            <li>Communication with Chinese playerbase to align design with expectations</li>
+                            <li>Implementation support on China (PRC)</li>
+                            <li>Bug fixes and improvements across all country content</li>
+                        </ul>
+                    </a>
+                    <div class = "portfolio-card">
+                        <h3 class="portfolio-entry-title">School Projects</h3>
+                        <ul>
+                            <li>Want more smaller projects?</li>
+                            <li>Check out my <a href = "https://github.com/malin-hallgren" target="_blank">GitHub profile</a> for a variety of projects.</li>
+                        </ul>
+                    </div>
+                </section>
             </article>
         </section>
     </main>
+
+    <article>
+        <div id="gtd" class="popup">
+            <div class="popup-content">
+                <h1>Hearts of Iron IV: Götterdämmerung</h1>
+                <figure class="trailer-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pUMqmW8LQDk?si=oeECEN70j2hLIDGX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <figcaption>Trailer for Austria coming in Hearts of Iron IV: Götterdämmerung</figcaption>
+                </figure>
+                <p class="popup-text">My work on Austria consisted of... well... everything regarding Austria really. The entire release cycle of an expansion starts with a expansive research phase that then informs the design throughout. This then moved into an intensive phase of implementation of the design and iteration upon it as feedback came in. I collaborated closely with designers on related countries (Germany and Hungary) as well as QA to ensure the content was always devloping in the expected direction while still being balanced and fun to interact with, be it as a player of the Austrian content, or as a player of any other country interacting with the Austrian AI.<br><br>With the responsibility of Austria as a country comes several critical systems such as the so called Anschluss which kicks off, or fails to kick off, the entire game. For more information on individual systems I will recommend a read through the <a href = "https://forum.paradoxplaza.com/forum/developer-diary/developer-diary-austria.1706600/" target="_blank">Developer Diary</a> I wrote as release drew near.<br><br>Beyond Austria this expansion also saw me become one of the technical "go-to" people when faced with particularly stubborn bugs, and as such I also took custody over several critical and high maintenance systems making use of inhouse systems with less than ideal documentation.</p>
+                <a href="#" class="popup-close">&times;</a>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div id="toa" class="popup">
+            <div class="popup-content">
+                <h1>Trial of Allegiance</h1>
+                <p>Lorem ipsum</p>
+                <a href="#" class="popup-close">&times;</a>
+            </div>
+        </div>
+    </article>
+                 
+    <article>
+        <div id="ncns" class="popup">
+            <div class="popup-content">
+                <h1>No Compromise, No Surrender</h1>
+                <p>Lorem ipsum</p>
+                <a href="#" class="popup-close">&times;</a>
+            </div>
+        </div>
+    </article>
+
 
     <footer>
         <p>&copy; 2026 Malin Hallgren</p>
         <nav>
             <ul>
                 <li class="footer-nav"><a href="index.html">Home</a></li>
-                <li class="footer-nav"><a href="portfolio.html">Portfolio</a></li>
+                <li class="footer-nav"><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+                <li class="footer-nav"><a href="about.html">About</a></li>
                 <li class="footer-nav"><a href="contact.html">Contact</a></li>
-                <li class="footer-nav"><a href="admin.html">Admin</a></li>
             </ul>
        </nav>
     </footer>
 </body>
 </html>
+
+<section class = "portfolio-card-big">
+                    <p>This part is still under construction! For now, here's a few links:</br></p>
+                    <ul>
+                        <li><a href = "https://github.com/malin-hallgren" target="_blank">GitHub Profile</a></li>
+                        <li><a href = "https://store.steampowered.com/app/3152780/Expansion__Hearts_of_Iron_IV_Gtterdmmerung" target="_blank">Steam Page: Hearts of Iron - Götterdämmerung</a></li>
+                        <li></li>
+                    </ul>
+                </section>
