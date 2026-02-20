@@ -176,16 +176,6 @@ h1{
     background-color: #d1d1d1;
 }
 
-@media (max-width: 768px) {
-    .long-about-card {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .portfolio-deck {
-        grid-template-columns: 1fr;
-    }
-}
 
 .portfolio-card-big {
     max-width: 78.5rem;
@@ -293,20 +283,43 @@ footer nav ul {
     background-color: white;
     width: 75rem;
     max-width: 80%;
-    padding: 2em;
     border-radius: 15px;
-    text-align: center;
+    overflow: hidden;
     position: relative;
+}
+
+.popup-inner {
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 2em;
+    text-align: center;
 }
 
 .popup-close {
     position: absolute;
-    top: 5%;
-    right: 2%;
+    top: 2%;
+    right: 5%;
     text-decoration: none;
 }
 
+.video {
+    max-width: 80%;
+    min-width: 50%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+}
 figcaption {
+    margin: auto;
     font-size: 0.9rem;
     color: #555;
+}
+@media (max-width: 768px) {
+    .long-about-card {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .portfolio-deck {
+        grid-template-columns: 1fr;
+    }
 }
