@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #414141;
+    color:#c9c9c9
+}
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -10,18 +15,19 @@ header {
     align-items: center;
     max-width: 78.5rem;
     padding: 0 2rem;
-    background-color: #f0f0f0;
+    background-color: #595959;
+    color: #c9c9c9;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo {
+#logo {
     opacity: 0.8;
     display: flex;
     height: 2rem;
     order: 1;
     padding-right: 1.5rem;
-    border-right: #d1d1d1 solid 1px;
+    border-right: #868686 solid 1px;
 }
 
 nav {
@@ -43,7 +49,7 @@ nav a[aria-current="page"] {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: #c9c9c9;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -71,10 +77,10 @@ a.portfolio-card:active {
         order: 2;
         margin-right: 0;
         width: 100%;
-        border-top: #d1d1d1 solid 1px;
+        border-top: #868686 solid 1px;
     }
 
-    .logo {
+    #logo {
         order: 1;
         margin-left: 0;
         margin-top: 1rem;
@@ -92,7 +98,7 @@ a.portfolio-card:active {
 }
 
 
-.hero-img {
+#hero-img {
     width: 100%;
     max-width: 78.5rem;
     height: auto;
@@ -118,7 +124,7 @@ main {
     max-width: 78.5rem;
     font-family: "Michroma", sans-serif;
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px #6a6160af;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     padding-bottom: 1rem;
 }
 
@@ -127,7 +133,7 @@ main {
     font-family: "Space Mono", serif;
     font-size: 1.5rem;
     padding-left: 0.5rem;
-    text-shadow: 2px 2px 4px #6a6160af;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     /* border-bottom: #383838 solid 2px; */
 }
 
@@ -139,7 +145,7 @@ main {
     align-items: center;
     gap: 1rem 10rem;
     padding: 2rem;
-    background-color: #f0f0f0;
+    background-color: #595959;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -150,7 +156,7 @@ main {
     grid-template-columns: 3fr 1fr;
     gap: 1rem 10rem;
     padding: 2rem;
-    background-color: #f0f0f0;
+    background-color: #595959;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -164,7 +170,7 @@ main {
 
 .portfolio-card {
     max-width: 100%;
-    background-color: #f0f0f0;
+    background-color: #595959;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -173,19 +179,19 @@ main {
 
 .portfolio-card:hover {
     transform: scale(1.02);
-    background-color: #e0e0e0;
+    background-color: #6e6e6e;
 }
 
 .portfolio-card:active {
     transform: scale(1.02);
-    background-color: #d1d1d1;
+    background-color: #818181;
 }
 
 
 .portfolio-card-big {
     max-width: 78.5rem;
     padding: 2rem;
-    background-color: #f0f0f0;
+    background-color: #595959;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
@@ -213,7 +219,7 @@ main {
     align-items: flex-start;
     gap: 2rem;
     padding: 2rem;
-    background-color: #f0f0f0;
+    background-color: #595959;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 } 
@@ -223,7 +229,7 @@ main {
     width: 35rem;
     min-width: 8rem;
     min-height: 35rem;
-    background-color: #fff;
+    background-color: #6c6c6c;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -231,17 +237,18 @@ main {
 
 .card h3 {
     margin-top: 0;
-    color: #333;
+    color: #c9c9c9;
     padding: 1rem;
-    border-bottom: #e9e9e9 solid 1px;
+    border-bottom: #7c7c7c solid 1px;
 }
 
 footer {
     width: 78.5rem;
     max-width: 100%;
     min-width: 8rem;
-    border-top: #aaaaaa solid 1px;
+    border-top: #545454 solid 1px;
     margin-top: 5rem;
+    color: #818181
 }
 
 footer nav ul {
@@ -255,7 +262,7 @@ footer nav ul {
 
 .footer-nav a {
     text-decoration: none;
-    color: #c9c9c9;
+    color: #696969;
 }
 
 .footer-nav a:hover {
@@ -274,7 +281,7 @@ footer nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     visibility: hidden;
     opacity: 0;
 }
@@ -285,7 +292,7 @@ footer nav ul {
 }
 
 .popup-content {
-    background-color: white;
+    background-color: #595959;
     width: 75rem;
     max-width: 80%;
     border-radius: 15px;
@@ -327,4 +334,30 @@ figcaption {
     .portfolio-deck {
         grid-template-columns: 1fr;
     }
+}
+
+/*Stupidity below!*/
+
+.hero-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 78.5rem;
+    margin: 2rem 0;
+}
+
+.theme-button {
+    position: absolute;
+    height: 21%;
+    width:9%;
+    top: 8.5%;
+    left: 73%;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    background-color: #a01f1f;
+    opacity: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
