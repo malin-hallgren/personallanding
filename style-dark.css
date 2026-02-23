@@ -28,6 +28,7 @@ header {
     order: 1;
     padding-right: 1.5rem;
     border-right: #868686 solid 1px;
+    aspect-ratio: 18/10;
 }
 
 nav {
@@ -86,7 +87,7 @@ a.portfolio-card:active {
         margin-top: 1rem;
         margin-bottom: 1rem;
         border-right: none;
-        
+        aspect-ratio: 18/10;
     }
 
     nav ul {
@@ -101,6 +102,7 @@ a.portfolio-card:active {
 #hero-img {
     width: 100%;
     max-width: 78.5rem;
+    aspect-ratio: 1256 / 460;
     height: auto;
     border-radius: 10px;
     display: block;

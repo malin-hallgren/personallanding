@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malin Hallgren - Home</title>
-    <link id = "theme" rel="stylesheet" href="style-light.css">
-    <script src="themerestore.js"></script>
+    <script>
+        const theme = localStorage.getItem('theme') === 'dark' ? 'style-dark.css' : 'style-light.css';
+        document.write('<link id="theme" rel="stylesheet" href="' + theme + '">');
+    </script>
+    <noscript>
+      <link id="theme" rel="stylesheet" href="style-light.css">
+    </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -25,31 +30,22 @@
             </ul>
        </nav>
        <figure>
-            <img id = "logo" src="favicon.png" alt="logo">
+            <script>
+                const logoSrc = localStorage.getItem('theme') === 'dark'
+                  ? 'favicon-dark.png'
+                  : 'favicon.png';
+                document.write('<img id="logo" src="' + logoSrc + '" alt="logo">');
+            </script>
         </figure>
     </header>
-    <!--To prevent flashing of the wrong theme on page load -->
-    <script> 
-            if (localStorage.getItem('theme') === 'dark') {
-                document.getElementById('logo').setAttribute('src', 'favicon-dark.png');
-            }
-            else {
-                document.getElementById('logo').setAttribute('src', 'favicon.png');
-            }
-        </script>
+
     <figure class = "hero-wrapper">
-        <img id = "hero-img" alt="Hero Image">
+        <script>
+            const heroSrc = localStorage.getItem('theme') === 'dark' ? 'hero-dark.jpg' : 'hero.jpg';
+            document.write('<img id="hero-img" src="' + heroSrc + '" alt="Hero Image">');
+        </script>
         <button class="theme-button" id="theme-button"></button>
     </figure>
-    <!--To prevent flashing of the wrong theme on page load -->
-    <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.getElementById('hero-img').setAttribute('src', 'hero-dark.jpg');
-        }
-        else {
-            document.getElementById('hero-img').setAttribute('src', 'hero.jpg');
-        }
-    </script>
     
     <h1 class = "page-heading">Malin Hallgren</h1>
     <h2 class="section-heading">- Fullstack Developer</h2>
