@@ -42,7 +42,7 @@ nav ul {
     gap: 2rem;
 }
 
-nav a[aria-current="page"] {
+a.active {
     text-decoration: underline;
     text-underline-offset: 0.25rem;
 }
@@ -134,7 +134,10 @@ main {
     font-size: 1.5rem;
     padding-left: 0.5rem;
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    /* border-bottom: #383838 solid 2px; */
+}
+
+#main-heading {
+    margin-bottom: -3rem;
 }
 
 .about-me-card {
@@ -165,35 +168,25 @@ main {
     max-width: 78.5rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: #595959;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-card {
     max-width: 100%;
-    background-color: #595959;
+    min-width: 8rem;
+    background-color: #6c6c6c;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .portfolio-card:hover {
     transform: scale(1.02);
-    background-color: #6e6e6e;
-}
-
-.portfolio-card:active {
-    transform: scale(1.02);
-    background-color: #818181;
-}
-
-
-.portfolio-card-big {
-    max-width: 78.5rem;
-    padding: 2rem;
-    background-color: #595959;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .elevator-pitch {
@@ -348,10 +341,10 @@ figcaption {
 
 .theme-button {
     position: absolute;
-    height: 21%;
-    width:9%;
-    top: 8.5%;
-    left: 73%;
+    height: 18%;
+    width:7.5%;
+    top: 17%;
+    left: 70%;
     z-index: 10;
     padding: 0.5rem 1rem;
     background-color: #a01f1f;
