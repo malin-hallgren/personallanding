@@ -354,3 +354,94 @@ figcaption {
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+@media print {
+    body {
+        background-color: #ffffff;
+        color: black;
+    }
+
+    a {
+        color: black;
+    }
+
+    .page-heading, .section-heading {
+        text-shadow: none;
+    }
+
+    .page-heading {
+        margin-top: 0.5rem;
+        font-size: 2rem;
+    }
+    .section-heading {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .about-me-card, .long-about-card, .portfolio-deck, .resume-body, .card {
+        box-shadow: none;
+        border: none;
+    }
+
+    .about-me-card {
+        margin-top: -4rem;
+        padding: 0;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: 2.3fr 0.7fr;
+        gap: 0rem;
+    }
+
+    .elevator-pitch {
+        max-width: none;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .profile-image {
+        width: 8rem;
+        height: auto;
+        padding: 0.2rem;
+        box-shadow: none;
+    }
+
+    .resume {
+        margin-top: -2rem;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .resume h2 {
+        display: none;
+    }
+
+    .resume-body {
+        margin-top: 0rem;
+        padding: 0;
+        background-color: transparent;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 0rem;
+    }
+
+    .card {
+        margin-left: 0;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+        min-width: 0;
+        height: auto;
+        min-height: auto;
+        background-color: transparent;
+    }
+
+    .card h3 {
+        color: black;
+        padding: 0;
+        border: none;
+    }
+
+    header, footer, nav, .hero-wrapper, .theme-button {
+        display: none;
+    }
+}
