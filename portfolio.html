@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malin Hallgren - Portfolio</title>
     <link id = "theme" rel="stylesheet" href="style-light.css">
-    <script src="themerestore.js"></script>
+    <script src="themerestore.js"></script> <!-- This is intentional to keep the theme from flashing! -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
@@ -13,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
+    <script src="greeting.js" defer></script>
+    <script src="themeswitch.js" defer></script>
 </head>
 <body>
    <header>
@@ -95,6 +97,16 @@
                 </section>
             </article>
         </section>
+        <section>
+            <article>
+                <div id="easter-modal">
+                    <div class="easter-modal-content">
+                        <p>Hello World!<br><br>C:\Your\File\Path\Here\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe (process 12488) exited with code 0 (0x0).<br>To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.<br>Press the "x" in the top right corner to close this window...</p>
+                        <a href="#" id="easter-close" class="popup-close">&times;</a>
+                    </div>
+                </div>
+            </article>
+        </section>
     </main>
 
     <article>
@@ -158,6 +170,5 @@
             </ul>
        </nav>
     </footer>
-    <script src="themeswitch.js"></script>
 </body>
 </html>

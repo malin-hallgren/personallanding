@@ -307,6 +307,44 @@ footer nav ul {
     text-decoration: none;
 }
 
+#easter-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#easter-modal.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.easter-modal-content {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    width: 75rem;
+    max-width: 80%;
+    overflow: hidden;
+    position: relative;
+    padding: 0rem 1rem;
+}
+
+.easter-modal-content p {
+    font-family: 'Cascade Mono', monospace;
+    font-size: 18px;
+}
+
+.easter-modal-content a {
+    color: #ffffff;
+}
+
 .video {
     max-width: 80%;
     min-width: 50%;
