@@ -1,42 +1,33 @@
-localStorage.getItem('theme') 
+function getCurrentTheme() {
+    return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+}
 
-function toggleTheme() 
-{
-    let themeLink = document.getElementById('theme');
-    let imgLink = document.getElementById('hero-img');
-    let faviconLink = document.getElementById('logo');
-    
-    if (themeLink.getAttribute('href') === 'style-dark.css') {
-        themeLink.setAttribute('href', 'style-light.css');
-        imgLink.setAttribute('src', 'hero.jpg');
-        faviconLink.setAttribute('src', 'favicon.png');
-        localStorage.setItem('theme', 'light');
-    } else {
-        themeLink.setAttribute('href', 'style-dark.css');
-        imgLink.setAttribute('src', 'hero-dark.jpg');
-        faviconLink.setAttribute('src', 'favicon-dark.png');
-        localStorage.setItem('theme', 'dark');
+function applyTheme(theme) {
+    const themeLink = document.getElementById('theme');
+    const imgLink = document.getElementById('hero-img');
+    const faviconLink = document.getElementById('logo');
+    const isDark = theme === 'dark';
+
+    if (themeLink) {
+        themeLink.setAttribute('href', isDark ? 'style-dark.css' : 'style-light.css');
+    }
+
+    if (imgLink) {
+        imgLink.setAttribute('src', isDark ? 'hero-dark.jpg' : 'hero.jpg');
+    }
+
+    if (faviconLink) {
+        faviconLink.setAttribute('src', isDark ? 'favicon-dark.png' : 'favicon.png');
     }
 }
 
-
+function toggleTheme() {
+    const swapTo = getCurrentTheme() === 'dark' ? 'light' : 'dark';
+    localStorage.setItem('theme', swapTo);
+    applyTheme(swapTo);
+}
 
 document.addEventListener('DOMContentLoaded', function() {
-    const themeButton = document.getElementById('theme-button');
-    themeButton.addEventListener('click', toggleTheme);
-
-    let themeLink = document.getElementById('theme');
-    let imgLink = document.getElementById('hero-img');
-    let faviconLink = document.getElementById('logo');
-
-    if (localStorage.getItem('theme') === 'dark') {
-        if(themeLink) themeLink.setAttribute('href', 'style-dark.css');
-        if(imgLink) imgLink.setAttribute('src', 'hero-dark.jpg');
-        if(faviconLink) faviconLink.setAttribute('src', 'favicon-dark.png');
-    }
-    else {
-        if(themeLink) themeLink.setAttribute('href', 'style-light.css');
-        if(imgLink) imgLink.setAttribute('src', 'hero.jpg');
-        if(faviconLink) faviconLink.setAttribute('src', 'favicon.png');
-    }
+    applyTheme(getCurrentTheme());
+    document.getElementById('theme-button')?.addEventListener('click', toggleTheme);
 });

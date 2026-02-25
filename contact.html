@@ -54,8 +54,19 @@
             <article >
                 <h1 class = "page-heading">Reach out...</h1>
                 <section class = "about-me-card">
-                    <p>This part is still under construction! If you need to reach me, the easiest way is via <a href=https://www.linkedin.com/in/malin-hallgren target="_blank">LinkedIn</a>.</p>
+                    <p>This part is still under construction! If you need to reach me, the easiest way is via <a href=https://www.linkedin.com/in/malin-hallgren target="_blank">LinkedIn</a>.<br><br>The below contact form is <span style="color:#d45e0a;"><strong>NOT</strong></span> functional yet, please do not attempt to contact me that way :'&#41</p>
             </article>
+        </section>
+        <section class="contact-form-container">
+            <form class="contact-form">
+                <label for="email">Email:</label><br><br>
+                <input type="email" id="email" name="email" size="30" placeholder="example@mail.com"required><br><br>
+                <label for="message">Message:</label><br><br>
+                <textarea type="text" id="message" name="message" rows="10" cols="60" placeholder="Type your message here..." required></textarea><br><br>
+                <label for="form-not-functional-check"><strong>I understand that the form is not functional:</strong></label>
+                <input type="checkbox" id="form-not-functional-check" name="form-not-functional" required><br><br>
+                <input type="submit" id="submit-button" value="Submit" disabled>
+            </form>
         </section>
     </main>
 
@@ -70,6 +81,7 @@
             </ul>
        </nav>
     </footer>
+    <script src="buttonstatus.js"></script>
     <script src="themeswitch.js"></script>
 </body>
 </html>

@@ -315,6 +315,70 @@ figcaption {
     font-size: 0.9rem;
     color: #555;
 }
+
+.contact-form-container {
+    max-width: 78.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem 10rem;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.contact-form {
+    max-width: 100%;
+}
+
+
+#message, #email {
+    max-width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: #d1d1d1 solid 1px;
+}
+
+#message:focus, #email:focus {
+    outline: none;
+    border-color: #d45e0a;
+    box-shadow: 0 0 0 2px #f07924;
+}
+
+#form-not-functional-check {
+    accent-color:#d45e0a
+}
+
+#submit-button {
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#submit-button:disabled {
+    padding: 0.5rem 1rem;
+    background-color: #cbcbcb;
+    color: #e4e4e4;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#submit-button:hover {
+    transform: scale(1.02);
+}
+
+#submit-button:disabled:hover {
+    transform: scale(1);
+}
+
 @media (max-width: 768px) {
     .long-about-card {
         grid-template-columns: 1fr;
