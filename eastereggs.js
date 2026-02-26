@@ -1,10 +1,5 @@
-const secret = ["h", "e", "l", "l", "o"];
-let input = [];
-
-const easterModal = document.getElementById("easter-modal");
-const closeButton = document.getElementById("easter-close");
-
 /* Theme Switcher */
+
 function getCurrentTheme() {
     return localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
 }
@@ -16,15 +11,15 @@ function applyTheme(theme) {
     const isDark = theme === 'dark';
 
     if (themeLink) {
-        themeLink.setAttribute('href', isDark ? 'style-dark.css' : 'style-light.css');
+        themeLink.href = isDark ? 'style-dark.css' : 'style-light.css';
     }
 
     if (imgLink) {
-        imgLink.setAttribute('src', isDark ? 'hero-dark.jpg' : 'hero.jpg');
+        imgLink.src = isDark ? 'hero-dark.jpg' : 'hero.jpg';
     }
 
     if (faviconLink) {
-        faviconLink.setAttribute('src', isDark ? 'favicon-dark.png' : 'favicon.png');
+        faviconLink.src = isDark ? 'favicon-dark.png' : 'favicon.png';
     }
 }
 
@@ -40,6 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 /* Easter Egg Modal */
+
+const secret = ["h", "e", "l", "l", "o"];
+let input = [];
+
+const easterModal = document.getElementById("easter-modal");
+const closeButton = document.getElementById("easter-close");
 
 document.addEventListener("keydown", (keyPressed) => {
     if (document.activeElement.tagName === "INPUT" || document.activeElement.tagName === "TEXTAREA") {
