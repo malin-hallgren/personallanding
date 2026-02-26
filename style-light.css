@@ -1,7 +1,7 @@
 * {
     font-family: "Arvo", serif;
     box-sizing: border-box;
-    
+
 }
 
 body {
@@ -33,6 +33,7 @@ nav {
     margin-right: auto;
     order: 2;
 }
+
 nav ul {
     list-style-type: none;
     display: flex;
@@ -56,6 +57,7 @@ a {
 a:hover {
     color: #d45e0a;
 }
+
 a:active {
     color: #f07924;
 }
@@ -66,35 +68,7 @@ a.portfolio-card:active {
     font-weight: normal;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    header nav {
-        order: 2;
-        margin-right: 0;
-        width: 100%;
-        border-top: #d1d1d1 solid 1px;
-    }
-
-    #logo {
-        order: 1;
-        margin-left: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border-right: none;
-        
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 0 1rem;
-    }
-}
 
 
 #hero-img {
@@ -197,7 +171,7 @@ main {
     border-radius: 50%;
     display: inline;
     box-shadow: 0 2px 5px 5px rgba(0, 0, 0, 0.1);
-    
+
 }
 
 .resume-body {
@@ -213,7 +187,7 @@ main {
     background-color: #f0f0f0;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-} 
+}
 
 .card {
     max-width: 100%;
@@ -247,7 +221,7 @@ footer nav ul {
     flex-wrap: nowrap;
     margin: 0 1rem;
     padding: 0;
-    
+
 }
 
 .footer-nav a {
@@ -258,6 +232,7 @@ footer nav ul {
 .footer-nav a:hover {
     color: #d45e0a;
 }
+
 .footer-nav a:active {
     color: #f07924;
 }
@@ -304,7 +279,7 @@ footer nav ul {
     text-decoration: none;
 }
 
-#easter-modal{
+#easter-modal {
     position: fixed;
     top: 0;
     left: 0;
@@ -331,7 +306,7 @@ footer nav ul {
     overflow: hidden;
     position: relative;
     padding: 0rem 1rem;
-    
+
 }
 
 .easter-modal-content p {
@@ -349,6 +324,7 @@ footer nav ul {
     aspect-ratio: 16 / 9;
     height: auto;
 }
+
 figcaption {
     margin: auto;
     font-size: 0.9rem;
@@ -367,26 +343,29 @@ figcaption {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
 .contact-form {
     max-width: 100%;
 }
 
 
-#message, #email {
+#message,
+#email {
     max-width: 100%;
     padding: 0.5rem;
     border-radius: 10px;
     border: #d1d1d1 solid 1px;
 }
 
-#message:focus, #email:focus {
+#message:focus,
+#email:focus {
     outline: none;
     border-color: #d45e0a;
     box-shadow: 0 0 0 2px #f07924;
 }
 
 #form-not-functional-check {
-    accent-color:#d45e0a
+    accent-color: #d45e0a
 }
 
 #submit-button {
@@ -418,7 +397,38 @@ figcaption {
     transform: scale(1);
 }
 
+
+/* Responsive Design */
+
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        order: 2;
+        margin-right: 0;
+        width: 100%;
+        border-top: #d1d1d1 solid 1px;
+    }
+
+    #logo {
+        order: 1;
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-right: none;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
     .about-card {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -429,39 +439,14 @@ figcaption {
     }
 }
 
-/* Stupidity below! */
-
-.hero-wrapper {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 78.5rem;
-    margin: 2rem 0;
-}
-
-.theme-button {
-    position: absolute;
-    height: 18%;
-    width:7.5%;
-    top: 17%;
-    left: 70%;
-    z-index: 10;
-    padding: 0.5rem 1rem;
-    background-color: #a01f1f;
-    opacity: 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
 /*Print stuff*/
 @media print {
     body {
         background-color: #ffffff;
     }
 
-    .page-heading, .section-heading {
+    .page-heading,
+    .section-heading {
         text-shadow: none;
     }
 
@@ -469,12 +454,17 @@ figcaption {
         margin-top: 0.5rem;
         font-size: 2rem;
     }
+
     .section-heading {
         font-size: 1.25rem;
         margin-bottom: 0.5rem;
     }
 
-    .wide-card, .about-card, .portfolio-deck, .resume-body, .card {
+    .wide-card,
+    .about-card,
+    .portfolio-deck,
+    .resume-body,
+    .card {
         box-shadow: none;
         border: none;
     }
@@ -537,7 +527,38 @@ figcaption {
         color: black;
     }
 
-    header, footer, nav, .hero-wrapper, .theme-button {
+    header,
+    footer,
+    nav,
+    .hero-wrapper,
+    .theme-button {
         display: none;
     }
 }
+
+/* Stupidity below! */
+
+.hero-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 78.5rem;
+    margin: 2rem 0;
+}
+
+.theme-button {
+    position: absolute;
+    height: 18%;
+    width: 7.5%;
+    top: 17%;
+    left: 70%;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    background-color: #a01f1f;
+    opacity: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

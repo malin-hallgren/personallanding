@@ -67,35 +67,7 @@ a.portfolio-card:active {
     font-weight: normal;
 }
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 
-    header nav {
-        order: 2;
-        margin-right: 0;
-        width: 100%;
-        border-top: #868686 solid 1px;
-    }
-
-    #logo {
-        order: 1;
-        margin-left: 0;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border-right: none;
-        
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1rem;
-        padding: 0 1rem;
-    }
-}
 
 
 #hero-img {
@@ -426,7 +398,37 @@ figcaption {
     transform: scale(1);
 }
 
+/* Responsive Design */
+
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        order: 2;
+        margin-right: 0;
+        width: 100%;
+        border-top: #868686 solid 1px;
+    }
+
+    #logo {
+        order: 1;
+        margin-left: 0;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border-right: none;
+        
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
     .about-card {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -435,32 +437,6 @@ figcaption {
     .portfolio-deck {
         grid-template-columns: 1fr;
     }
-}
-
-/*Stupidity below!*/
-
-.hero-wrapper {
-    position: relative;
-    display: block;
-    width: 100%;
-    max-width: 78.5rem;
-    margin: 2rem 0;
-}
-
-.theme-button {
-    position: absolute;
-    height: 18%;
-    width:7.5%;
-    top: 17%;
-    left: 70%;
-    z-index: 10;
-    padding: 0.5rem 1rem;
-    background-color: #a01f1f;
-    opacity: 0;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 @media print {
@@ -553,3 +529,30 @@ figcaption {
         display: none;
     }
 }
+
+/*Stupidity below!*/
+
+.hero-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 78.5rem;
+    margin: 2rem 0;
+}
+
+.theme-button {
+    position: absolute;
+    height: 18%;
+    width:7.5%;
+    top: 17%;
+    left: 70%;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    background-color: #a01f1f;
+    opacity: 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malin Hallgren - Home</title>
-    <link id = "theme" rel="stylesheet" href="style-light.css">
+    <link id="theme" rel="stylesheet" href="style-light.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
-    <script src="greeting.js" defer></script>
-    <script src="themeswitch.js" defer></script>
+    <script src="eastereggs.js" defer></script>
 </head>
+
 <body>
-   <header>
+    <header>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Home</a></li>
@@ -24,131 +26,121 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-       </nav>
-       <figure>
-            <img id = "logo" src="favicon.png" alt="logo">
+        </nav>
+        <figure>
+            <img id="logo" src="favicon.png" alt="logo">
         </figure>
     </header>
-    <!--To prevent flashing of the wrong theme on page load -->
-    <!-- <script> 
-            if (localStorage.getItem('theme') === 'dark') {
-                document.getElementById('logo').setAttribute('src', 'favicon-dark.png');
-            }
-            else {
-                document.getElementById('logo').setAttribute('src', 'favicon.png');
-            }
-        </script> -->
-    <figure class = "hero-wrapper">
-        <img id = "hero-img" alt="Hero Image">
+    <figure class="hero-wrapper">
+        <img id="hero-img" alt="Hero Image">
         <button class="theme-button" id="theme-button"></button>
     </figure>
-    <!--To prevent flashing of the wrong theme on page load -->
-    <!-- <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.getElementById('hero-img').setAttribute('src', 'hero-dark.jpg');
-        }
-        else {
-            document.getElementById('hero-img').setAttribute('src', 'hero.jpg');
-        }
-    </script> -->
-    
-    <main><!-- main content goes here -->
+    <main>
         <h1 id="main-heading" class="page-heading">Malin Hallgren</h1>
         <h2 class="section-heading">- Fullstack Developer</h2>
         <section>
-            <article >
-                <section class = "wide-card">
-                    <p class = "elevator-pitch">Curious, driven and ambitious. A relentless focus on useability and function but also on the what's and why's in the mind of the user.</p>
-                    <img class="profile-image" src="https://media.licdn.com/dms/image/v2/D4D03AQFMWb_9H6-Nnw/profile-displayphoto-scale_400_400/B4DZp0IlwHGgAg-/0/1762885001834?e=1772668800&v=beta&t=h9vcvaSfzKa2E5ZEBn_pMuYJER7rGIvFzKD9Z0D8mMQ" alt="Profile Picture">
+            <article>
+                <section class="wide-card">
+                    <p class="elevator-pitch">Curious, driven and ambitious. A relentless focus on useability and
+                        function but also on the what's and why's in the mind of the user.</p>
+                    <img class="profile-image"
+                        src="https://media.licdn.com/dms/image/v2/D4D03AQFMWb_9H6-Nnw/profile-displayphoto-scale_400_400/B4DZp0IlwHGgAg-/0/1762885001834?e=1772668800&v=beta&t=h9vcvaSfzKa2E5ZEBn_pMuYJER7rGIvFzKD9Z0D8mMQ"
+                        alt="Profile Picture">
                 </section>
             </article>
         </section>
+        <section class="resume">
+            <h2 class="section-heading">Resume</h2>
+            <section class="resume-body">
+                <article class="card">
+                    <h3>Experience</h3>
+                    <ul>
+                        <li class="experience-entry">Content Designer @ Paradox Interactive, 2023-Present</br>
+                            <blockquote>
+                                <p>Developing ingame content for Hearts of Iron 4, Paradox most played in-house
+                                    developed game with a monthly unique playerbase of over 1,000,000.</p>
+                            </blockquote>
+                        </li>
+                        <li class="experience-entry">2D Artist Intern @ Overflow Games, 2021-2022</br>
+                            <blockquote>
+                                <p>Created a 2D asset library for the game Madshot, later published by 501 Games.</p>
+                            </blockquote>
+                        </li>
+                        <li class="experience-entry">Freelance Vector Graphician, 2017</br>
+                            <blockquote>
+                                <p>Created and optimised vector art for web development.</p>
+                            </blockquote>
+                        </li>
+                    </ul>
+                </article>
 
-        <section class = "resume">
-            <h2 class = "section-heading">Resume</h2>
-            <section class = "resume-body">
-                <article class = "card">
-                <h3>Experience</h3>
-                <ul>
-                    <li class = "experience-entry">Content Designer @ Paradox Interactive, 2023-Present</br>
-                        <blockquote>
-                            <p>Developing ingame content for Hearts of Iron 4, Paradox most played in-house developed game with a monthly unique playerbase of over 1,000,000.</p>
-                        </blockquote>
-                    </li>
-                    <li class = "experience-entry">2D Artist Intern @ Overflow Games, 2021-2022</br>
-                        <blockquote>
-                            <p>Created a 2D asset library for the game Madshot, later published by 501 Games.</p>
-                        </blockquote>
-                    </li>
-                    <li class = "experience-entry">Freelance Vector Graphician, 2017</br>
-                        <blockquote>
-                            <p>Created and optimised vector art for web development.</p>
-                        </blockquote>
-                    </li>
-                </ul>
-            </article>
+                <article class="card">
+                    <h3>Education</h3>
+                    <ul>
+                        <li class="experience-entry">Fullstack Devlopment in .NET/C# @ Chas Academy</br>
+                            <blockquote>
+                                <p>Studied fullstack development in .NET/C# <a
+                                        href="https://chasacademy.se/program/fullstackutvecklare-net">Course
+                                        Plan</a></a></p>
+                            </blockquote>
+                        </li>
+                        <li class="experience-entry">Concept Art and Illustration Fundamentals @ Hjo Konstskola
+                            <blockquote>
+                                <p>Studied fundamentals of art and art theory for entertainment media.</p>
+                            </blockquote>
+                        </li>
+                        <li class="experience-entry">Indie Games Development @ Valla Game Education</br>
+                            <blockquote>
+                                <p>Studied programming, design, art and narrative for games.</p>
+                            </blockquote>
+                        </li>
+                        <li class="experience-entry">Term 1 of Visual Arts Digital Design @ Luleå Tekniska Universitetet
+                        </li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>Web Development</li> <!-- set display inline to make it horizontal -->
+                        <li>Software Development</li>
+                        <li>Games and Interactive Design</li>
+                        <li>Copy and Narrative Writing</li>
+                        <li>Programming Languages:
+                            <ul>
+                                <li>C#</li>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>Python</li>
+                                <li>SQL</li>
+                                <li>C</li>
+                            </ul>
+                        </li>
+                </article>
 
-            <article class = "card">
-                <h3>Education</h3>
-                <ul>
-                    <li class = "experience-entry">Fullstack Devlopment in .NET/C# @ Chas Academy</br>
-                        <blockquote>
-                            <p>Studied fullstack development in .NET/C# <a href="https://chasacademy.se/program/fullstackutvecklare-net">Course Plan</a></a></p>
-                        </blockquote>
-                    </li>
-                    <li class = "experience-entry">Concept Art and Illustration Fundamentals @ Hjo Konstskola
-                        <blockquote>
-                            <p>Studied fundamentals of art and art theory for entertainment media.</p>
-                        </blockquote>
-                    </li>
-                    <li class = "experience-entry">Indie Games Development @ Valla Game Education</br>
-                        <blockquote>
-                            <p>Studied programming, design, art and narrative for games.</p>
-                        </blockquote>
-                    </li>
-                    <li class = "experience-entry">Term 1 of Visual Arts Digital Design @ Luleå Tekniska Universitetet</li>
-                </ul>
-            </article>
-            <article class = "card">
-                <h3>Skills</h3>
-                <ul> 
-                    <li>Web Development</li> <!-- set display inline to make it horizontal -->
-                    <li>Software Development</li>
-                    <li>Games and Interactive Design</li>
-                    <li>Copy and Narrative Writing</li>
-                    <li>Programming Languages:
-                        <ul>
-                            <li>C#</li>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>Python</li>
-                            <li>SQL</li>
-                            <li>C</li>
-                        </ul>
-                    </li>
-            </article>
-
-            <article class = "card">
-                <h3>Releases</h3>
-                <p>Read more about these under their entries in the <a href = "portfolio.html">Portfolio</a></p>
-                <ul> 
-                    <li>Hearts of Iron IV: No Compromise, No Surrender</li>
-                    <li>Hearts of Iron IV: Götterdämmerung</li>
-                    <li>Hearts of Iron IV: Trial of Allegiance</li>
-                    <li>Hearts of Iron IV: Arms Against Tyranny</li>
-                </ul>
-            </article>          
-        </section>
-        <section>
-            <article>
-                <div id="easter-modal">
-                    <div class="easter-modal-content">
-                        <p>Hello World!<br><br>C:\Your\File\Path\Here\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe (process 12488) exited with code 0 (0x0).<br>To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.<br>Press the "x" in the top right corner to close this window...</p>
-                        <a href="#" id="easter-close" class="popup-close">&times;</a>
+                <article class="card">
+                    <h3>Releases</h3>
+                    <p>Read more about these under their entries in the <a href="portfolio.html">Portfolio</a></p>
+                    <ul>
+                        <li>Hearts of Iron IV: No Compromise, No Surrender</li>
+                        <li>Hearts of Iron IV: Götterdämmerung</li>
+                        <li>Hearts of Iron IV: Trial of Allegiance</li>
+                        <li>Hearts of Iron IV: Arms Against Tyranny</li>
+                    </ul>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <div id="easter-modal">
+                        <div class="easter-modal-content">
+                            <p>Hello World!<br><br>C:\Your\File\Path\Here\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+                                (process 12488) exited with code 0 (0x0).<br>To automatically close the console when
+                                debugging stops, enable Tools->Options->Debugging->Automatically close the console when
+                                debugging stops.<br>Press the "x" in the top right corner to close this window...</p>
+                            <a href="#" id="easter-close" class="popup-close">&times;</a>
+                        </div>
                     </div>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
     </main>
     <footer>
         <p>&copy; 2026 Malin Hallgren</p>
@@ -159,7 +151,8 @@
                 <li class="footer-nav"><a href="about.html">About</a></li>
                 <li class="footer-nav"><a href="contact.html">Contact</a></li>
             </ul>
-       </nav>
+        </nav>
     </footer>
 </body>
+
 </html>

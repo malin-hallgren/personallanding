@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malin Hallgren - Portfolio</title>
-    <link id = "theme" rel="stylesheet" href="style-light.css">
+    <link id="theme" rel="stylesheet" href="style-light.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
-    <script src="greeting.js" defer></script>
-    <script src="themeswitch.js" defer></script>
+    <script src="eastereggs.js" defer></script>
 </head>
+
 <body>
-   <header>
-       <nav>
+    <header>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html" class="active">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-       </nav>
-       <figure>
-            <img id = "logo" src="favicon.png" alt="logo">
+        </nav>
+        <figure>
+            <img id="logo" src="favicon.png" alt="logo">
         </figure>
     </header>
-    <!-- <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.getElementById('logo').setAttribute('src', 'favicon-dark.png');
-        }
-        else {
-            document.getElementById('logo').setAttribute('src', 'favicon.png');
-        }
-    </script> -->
-    <figure class = "hero-wrapper">
-        <img id = "hero-img" alt="Hero Image">
+    <figure class="hero-wrapper">
+        <img id="hero-img" alt="Hero Image">
         <button class="theme-button" id="theme-button"></button>
     </figure>
-    <!-- <script>
-            if (localStorage.getItem('theme') === 'dark') {
-                document.getElementById('hero-img').setAttribute('src', 'hero-dark.jpg');
-            }
-            else {
-                document.getElementById('hero-img').setAttribute('src', 'hero.jpg');
-            }
-        </script> -->
     <main>
         <section>
             <article class="portfolio-article">
                 <h1 class="page-heading">Portfolio</h1>
-                
-                <section class = "portfolio-deck">
-                    <div class = "portfolio-card">
+
+                <section class="portfolio-deck">
+                    <div class="portfolio-card">
                         <h3 class="portfolio-entry-title"><a href="#gtd">Hearts of Iron IV: Götterdämmerung</a></h3>
                         <ul>
                             <li>Published by Paradox Interactive (&copy;All rights reserved) in 2024</li>
@@ -63,34 +49,37 @@
                             <li>Implementation support on Germany and Belgium</li>
                             <li>Customer facing communication/marketing for Austria</li>
                             <li>Bug fixes and improvements across all country content</li>
-                            <li><a href = "#gtd">Click for more info</a></li>
+                            <li><a href="#gtd">Click for more info</a></li>
                         </ul>
                     </div>
-                    
-                    <div class = "portfolio-card">
+
+                    <div class="portfolio-card">
                         <h3 class="portfolio-entry-title"><a href="#toa">Hearts of Iron IV: Trial of Allegiance</a></h3>
                         <ul>
                             <li>Published by Paradox Interactive (&copy;All rights reserved) in 2024</li>
                             <li>Implementation support on Brazil, Argentina and Chile</li>
                             <li>Bug fixes and improvements across all country content</li>
-                            <li><a href = "#toa">Click for more info</a></li>
+                            <li><a href="#toa">Click for more info</a></li>
                         </ul>
                     </div>
-                    <div class = "portfolio-card">
-                        <h3 class="portfolio-entry-title"><a href="#ncns">Hearts of Iron IV: No Compromise, No Surrender</a></h3>
+                    <div class="portfolio-card">
+                        <h3 class="portfolio-entry-title"><a href="#ncns">Hearts of Iron IV: No Compromise, No
+                                Surrender</a></h3>
                         <ul>
                             <li>Published by Paradox Interactive (&copy;All rights reserved) in 2025</li>
                             <li>Design of country content for China (PRC)</li>
                             <li>Implementation support on China (PRC)</li>
                             <li>Bug fixes and improvements across all country content</li>
-                            <li><a href = "#ncns">Click for more info</a></li>
+                            <li><a href="#ncns">Click for more info</a></li>
                         </ul>
                     </div>
-                    <div class = "portfolio-card">
-                        <h3 class="portfolio-entry-title"><a href="https://github.com/malin-hallgren?tab=repositories">School Projects</a></h3>
+                    <div class="portfolio-card">
+                        <h3 class="portfolio-entry-title"><a
+                                href="https://github.com/malin-hallgren?tab=repositories">School Projects</a></h3>
                         <ul>
                             <li>Want more smaller projects?</li>
-                            <li>Check out my <a href = "https://github.com/malin-hallgren" target="_blank">GitHub profile</a> for a variety of projects.</li>
+                            <li>Check out my <a href="https://github.com/malin-hallgren" target="_blank">GitHub
+                                    profile</a> for a variety of projects.</li>
                         </ul>
                     </div>
                 </section>
@@ -100,7 +89,10 @@
             <article>
                 <div id="easter-modal">
                     <div class="easter-modal-content">
-                        <p>Hello World!<br><br>C:\Your\File\Path\Here\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe (process 12488) exited with code 0 (0x0).<br>To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.<br>Press the "x" in the top right corner to close this window...</p>
+                        <p>Hello World!<br><br>C:\Your\File\Path\Here\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+                            (process 12488) exited with code 0 (0x0).<br>To automatically close the console when
+                            debugging stops, enable Tools->Options->Debugging->Automatically close the console when
+                            debugging stops.<br>Press the "x" in the top right corner to close this window...</p>
                         <a href="#" id="easter-close" class="popup-close">&times;</a>
                     </div>
                 </div>
@@ -112,13 +104,33 @@
         <div id="gtd" class="popup">
             <div class="popup-content">
                 <div class="popup-inner">
-                <h1>Hearts of Iron IV:</h1>
-                <h2>Götterdämmerung</h2>
-                <figure class="trailer-video">
-                    <iframe class="video" src="https://www.youtube.com/embed/pUMqmW8LQDk?si=oeECEN70j2hLIDGX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <figcaption>Trailer for Austria coming in Hearts of Iron IV: Götterdämmerung</figcaption>
-                </figure>
-                <p class="popup-text">My work on Austria consisted of... well... everything regarding Austria really. The entire release cycle of an expansion starts with a expansive research phase that then informs the design throughout. This then moved into an intensive phase of implementation of the design and iteration upon it as feedback came in. I collaborated closely with designers on related countries (Germany and Hungary) as well as QA to ensure the content was always devloping in the expected direction while still being balanced and fun to interact with, be it as a player of the Austrian content, or as a player of any other country interacting with the Austrian AI.<br><br>With the responsibility of Austria as a country comes several critical systems such as the so called Anschluss which kicks off, or fails to kick off, the entire game. For more information on individual systems I will recommend a read through the <a href = "https://forum.paradoxplaza.com/forum/developer-diary/developer-diary-austria.1706600/" target="_blank">Developer Diary</a> I wrote as release drew near.<br><br>Beyond Austria this expansion also saw me become one of the technical "go-to" people when faced with particularly stubborn bugs, and as such I also took custody over several critical and high maintenance systems making use of inhouse systems with less than ideal documentation.<br><br>Check out the expansion on <a href="https://store.steampowered.com/app/3152780/Expansion__Hearts_of_Iron_IV_Gtterdmmerung">Steam</a>.</p>
+                    <h1>Hearts of Iron IV:</h1>
+                    <h2>Götterdämmerung</h2>
+                    <figure class="trailer-video">
+                        <iframe class="video" src="https://www.youtube.com/embed/pUMqmW8LQDk?si=oeECEN70j2hLIDGX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <figcaption>Trailer for Austria coming in Hearts of Iron IV: Götterdämmerung</figcaption>
+                    </figure>
+                    <p class="popup-text">My work on Austria consisted of... well... everything regarding Austria
+                        really. The entire release cycle of an expansion starts with a expansive research phase that
+                        then informs the design throughout. This then moved into an intensive phase of implementation of
+                        the design and iteration upon it as feedback came in. I collaborated closely with designers on
+                        related countries (Germany and Hungary) as well as QA to ensure the content was always devloping
+                        in the expected direction while still being balanced and fun to interact with, be it as a player
+                        of the Austrian content, or as a player of any other country interacting with the Austrian
+                        AI.<br><br>With the responsibility of Austria as a country comes several critical systems such
+                        as the so called Anschluss which kicks off, or fails to kick off, the entire game. For more
+                        information on individual systems I will recommend a read through the <a
+                            href="https://forum.paradoxplaza.com/forum/developer-diary/developer-diary-austria.1706600/"
+                            target="_blank">Developer Diary</a> I wrote as release drew near.<br><br>Beyond Austria this
+                        expansion also saw me become one of the technical "go-to" people when faced with particularly
+                        stubborn bugs, and as such I also took custody over several critical and high maintenance
+                        systems making use of inhouse systems with less than ideal documentation.<br><br>Check out the
+                        expansion on <a
+                            href="https://store.steampowered.com/app/3152780/Expansion__Hearts_of_Iron_IV_Gtterdmmerung">Steam</a>.
+                    </p>
                 </div>
                 <a href="#" class="popup-close">&times;</a>
             </div>
@@ -129,18 +141,28 @@
         <div id="toa" class="popup">
             <div class="popup-content">
                 <div class="popup-inner">
-                <h1>Hearts of Iron IV:</h1>
-                <h2>Trial of Allegiance</h2>
-                <figure class="trailer-video">
-                    <iframe class="video" src="https://www.youtube.com/embed/-oOM9cfxovc?si=asMN4rSsAoI_XEIW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <figcaption>Trailer for Hearts of Iron IV: Trial of Allegiance</figcaption>
-                <p>Trial of Allegiance was the second expansion I was part of creating at Paradox Interactive. As designs were mostly already done my main duties on this expansion was to implement and iterate upon the initial drafts.<br><br>My efforts were mainly focused on the implementation of Brazilian content as to offload the designer in charge, allowing her to take on a more producer-like role and support the rest of the team. I also offered bug fixing support for all countries as allowing the responsible designers to instead focus on design.<br><br>Check out the expansion on <a href="https://store.steampowered.com/app/2695150/Country_Pack__Hearts_of_Iron_IV_Trial_of_Allegiance"">Steam</a>.</p>
+                    <h1>Hearts of Iron IV:</h1>
+                    <h2>Trial of Allegiance</h2>
+                    <figure class="trailer-video">
+                        <iframe class="video" src="https://www.youtube.com/embed/-oOM9cfxovc?si=asMN4rSsAoI_XEIW"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <figcaption>Trailer for Hearts of Iron IV: Trial of Allegiance</figcaption>
+                        <p>Trial of Allegiance was the second expansion I was part of creating at Paradox Interactive.
+                            As designs were mostly already done my main duties on this expansion was to implement and
+                            iterate upon the initial drafts.<br><br>My efforts were mainly focused on the implementation
+                            of Brazilian content as to offload the designer in charge, allowing her to take on a more
+                            producer-like role and support the rest of the team. I also offered bug fixing support for
+                            all countries as allowing the responsible designers to instead focus on design.<br><br>Check
+                            out the expansion on <a
+                                href="https://store.steampowered.com/app/2695150/Country_Pack__Hearts_of_Iron_IV_Trial_of_Allegiance"">Steam</a>.</p>
                 </div>
-                <a href="#" class="popup-close">&times;</a>
+                <a href=" #" class="popup-close">&times;</a>
+                </div>
             </div>
-        </div>
     </article>
-                 
+
     <article>
         <div id="ncns" class="popup">
             <div class="popup-content">
@@ -148,9 +170,26 @@
                     <h1>Hearts of Iron IV:</h1>
                     <h2>No Compromise, No Surrender</h2>
                     <figure class="trailer-video">
-                        <iframe class="video" src="https://www.youtube.com/embed/ftm1FxbAZiE?si=s3TaAsAyEvYpkTYX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe class="video" src="https://www.youtube.com/embed/ftm1FxbAZiE?si=s3TaAsAyEvYpkTYX"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <figcaption>Trailer for Hearts of Iron IV: No Compromise, No Surrender</figcaption>
-                    <p>No Compromise, No Surrender is the fourth expansion I was part of creating at Paradox Interactive. During this expansion my main focus was the design and implementation of the People's Republic of China. Beyond the challenges of researching such a closed off nation I also had to tread a very careful line between propaganda and player expectations. I managed the design process in its' entirety as well as kept in close touch with content creators from the Chinese, the Taiwanese and the Western playerbases to make sure that all content felt enjoyable to them, no matter their personal stance on the geopolitical situation, both current and former, in the region.<br><br>Along with design work I helped advice what designers needed from programmers and laid the groundwork for how designers communicate needs and risks to both production and programming. This ensured that risks could be mitigated early and that everyone, early on, shared the same vision of what was actually needed for the design to work, and how we could modify it should time or cost concerns prove insurmountable.<br><br>Check out the expansion on <a href="https://store.steampowered.com/app/3796260/Expansion__Hearts_of_Iron_IV_No_Compromise_No_Surrender/">Steam</a>.</p>
+                        <p>No Compromise, No Surrender is the fourth expansion I was part of creating at Paradox
+                            Interactive. During this expansion my main focus was the design and implementation of the
+                            People's Republic of China. Beyond the challenges of researching such a closed off nation I
+                            also had to tread a very careful line between propaganda and player expectations. I managed
+                            the design process in its' entirety as well as kept in close touch with content creators
+                            from the Chinese, the Taiwanese and the Western playerbases to make sure that all content
+                            felt enjoyable to them, no matter their personal stance on the geopolitical situation, both
+                            current and former, in the region.<br><br>Along with design work I helped advice what
+                            designers needed from programmers and laid the groundwork for how designers communicate
+                            needs and risks to both production and programming. This ensured that risks could be
+                            mitigated early and that everyone, early on, shared the same vision of what was actually
+                            needed for the design to work, and how we could modify it should time or cost concerns prove
+                            insurmountable.<br><br>Check out the expansion on <a
+                                href="https://store.steampowered.com/app/3796260/Expansion__Hearts_of_Iron_IV_No_Compromise_No_Surrender/">Steam</a>.
+                        </p>
                 </div>
                 <a href="#" class="popup-close">&times;</a>
             </div>
@@ -167,7 +206,8 @@
                 <li class="footer-nav"><a href="about.html">About</a></li>
                 <li class="footer-nav"><a href="contact.html">Contact</a></li>
             </ul>
-       </nav>
+        </nav>
     </footer>
 </body>
+
 </html>

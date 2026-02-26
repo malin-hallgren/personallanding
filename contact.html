@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malin Hallgren - Contact</title>
-    <link id = "theme" rel="stylesheet" href="style-light.css">
+    <link id="theme" rel="stylesheet" href="style-light.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.png" type="image/png">
-    <script src="greeting.js" defer></script>
+    <script src="eastereggs.js" defer></script>
     <script src="buttonstatus.js" defer></script>
-    <script src="themeswitch.js" defer></script>
 </head>
+
 <body>
-   <header>
-       <nav>
+    <header>
+        <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html" class="active">Contact</a></li>
             </ul>
-       </nav>
-       <figure>
-            <img id = "logo" src="favicon.png" alt="logo">
+        </nav>
+        <figure>
+            <img id="logo" src="favicon.png" alt="logo">
         </figure>
     </header>
-    <!-- <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.getElementById('logo').setAttribute('src', 'favicon-dark.png');
-        }
-        else {
-            document.getElementById('logo').setAttribute('src', 'favicon.png');
-        }
-    </script> -->
-
-    <figure class = "hero-wrapper">
-        <img id = "hero-img" alt="Hero Image">
+    <figure class="hero-wrapper">
+        <img id="hero-img" alt="Hero Image">
         <button class="theme-button" id="theme-button"></button>
     </figure>
-    <!-- <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.getElementById('hero-img').setAttribute('src', 'hero-dark.jpg');
-        }
-        else {
-            document.getElementById('hero-img').setAttribute('src', 'hero.jpg');
-        }
-    </script> -->
     <main>
         <section>
-            <article >
-                <h1 class = "page-heading">Reach out...</h1>
-                <section class = "wide-card">
-                    <p>This part is still under construction! If you need to reach me, the easiest way is via <a href=https://www.linkedin.com/in/malin-hallgren target="_blank">LinkedIn</a>.<br><br>The below contact form is <span style="color:#d45e0a;"><strong>NOT</strong></span> functional yet, please do not attempt to contact me that way :'&#41</p>
+            <article>
+                <h1 class="page-heading">Reach out...</h1>
+                <section class="wide-card">
+                    <p>This part is still under construction! If you need to reach me, the easiest way is via <a
+                            href=https://www.linkedin.com/in/malin-hallgren target="_blank">LinkedIn</a>.<br><br>The
+                        below contact form is <span style="color:#d45e0a;"><strong>NOT</strong></span> functional yet,
+                        please do not attempt to contact me that way :'&#41</p>
             </article>
         </section>
         <section class="contact-form-container">
             <form class="contact-form">
                 <label for="email">Email:</label><br><br>
-                <input type="email" id="email" name="email" size="30" placeholder="example@mail.com"required><br><br>
+                <input type="email" id="email" name="email" size="30" placeholder="example@mail.com" required><br><br>
                 <label for="message">Message:</label><br><br>
-                <textarea type="text" id="message" name="message" rows="10" cols="60" placeholder="Type your message here..." required></textarea><br><br>
-                <label for="form-not-functional-check"><strong>I understand that the form is not functional:</strong></label>
+                <textarea type="text" id="message" name="message" rows="10" cols="60"
+                    placeholder="Type your message here..." required></textarea><br><br>
+                <label for="form-not-functional-check"><strong>I understand that the form is not
+                        functional:</strong></label>
                 <input type="checkbox" id="form-not-functional-check" name="form-not-functional" required><br><br>
                 <input type="submit" id="submit-button" value="Submit" disabled>
             </form>
@@ -74,7 +64,10 @@
             <article>
                 <div id="easter-modal">
                     <div class="easter-modal-content">
-                        <p>Hello World!<br><br>C:\Your\File\Path\Here\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe (process 12488) exited with code 0 (0x0).<br>To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.<br>Press the "x" in the top right corner to close this window...</p>
+                        <p>Hello World!<br><br>C:\Your\File\Path\Here\ConsoleApp1\bin\Debug\net8.0\ConsoleApp1.exe
+                            (process 12488) exited with code 0 (0x0).<br>To automatically close the console when
+                            debugging stops, enable Tools->Options->Debugging->Automatically close the console when
+                            debugging stops.<br>Press the "x" in the top right corner to close this window...</p>
                         <a href="#" id="easter-close" class="popup-close">&times;</a>
                     </div>
                 </div>
@@ -91,7 +84,8 @@
                 <li class="footer-nav"><a href="about.html">About</a></li>
                 <li class="footer-nav"><a href="contact.html" class="active">Contact</a></li>
             </ul>
-       </nav>
+        </nav>
     </footer>
 </body>
+
 </html>
